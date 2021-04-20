@@ -20,6 +20,34 @@
       padding: 0;
     }
 
+    @font-face {
+      font-family: 'SpaceClaim ASME CB';
+      font-weight: normal;
+      font-style: normal;
+      font-family: 'SpaceClaim ASME CB';
+      src: url('font/SpaceClaimASMECB.eot');
+      /* IE9 Compat Modes */
+      src: url('font/SpaceClaimASMECB.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('font/SpaceClaimASMECB.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('font/SpaceClaimASMECB.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('font/SpaceClaimASMECB.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('font/SpaceClaimASMECB.svg#svgFontName') format('svg');
+      /* Legacy iOS */
+    }
+
+    body {
+      font-family: 'SpaceClaim ASME CB', Fallback, sans-serif;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.3em;
+    }
+
     canvas {
       width: 100%;
     }
@@ -77,6 +105,7 @@
 
 <body>
   <div id="container">
+    <p>Coming Soon!</p>
     <div id="video-bg">
       <video poster="img/poster.png" id="videoBG" playsinline preload autoplay muted loop>
         <source src="vid/seethrougH.webm" type="video/webm">
